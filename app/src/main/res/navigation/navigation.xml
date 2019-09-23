@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/loginscreen">
+
+    <fragment
+        android:id="@+id/loginscreen"
+        android:name="com.example.weatherapp.Loginscreen"
+        android:label="fragment_loginscreen"
+        tools:layout="@layout/fragment_login" />
+    <fragment
+        android:id="@+id/register"
+        android:name="com.example.weatherapp.Register"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register" />
+    <fragment
+        android:id="@+id/dashboard"
+        android:name="com.example.weatherapp.Dashboard"
+        android:label="fragment_dashboard"
+        tools:layout="@layout/fragment_dashboard" />
+</navigation>
